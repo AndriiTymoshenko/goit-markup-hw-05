@@ -34,7 +34,7 @@ html {
 
 body {
   color: var(--primary-text-color);
-  font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -161,6 +161,7 @@ img {
   line-height: calc(16.41 / 14);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  cursor: url(../images/icons/finger1.svg);
 
   transition: color 250ms var(--timing-function);
 }
@@ -263,10 +264,9 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
+  cursor: url(../images/icons/finger1.svg);
 
-  transition: background-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .button:hover,
@@ -417,8 +417,7 @@ img {
   font-size: 16px;
   background-color: var(--primary-white-color);
 
-  transition: color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .team .link:hover,
@@ -478,8 +477,7 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 
-  transition: fill 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .clients .link:hover,
@@ -526,7 +524,7 @@ img {
   text-decoration: none;
   color: inherit;
 
-  transition: color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 }
 
 .ftwhite {
@@ -574,7 +572,7 @@ img {
   border-radius: 50%;
   background-color: var(--icon-bg);
 
-  transition: background-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .socials-nav .link:hover,
@@ -616,10 +614,10 @@ img {
   background-color: var(--secondary-bg-color);
   cursor: pointer;
 
-  transition: color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .item-btn:hover,
@@ -632,7 +630,7 @@ img {
 
 /* Portfolio page customisation */
 
-.flex-container {
+.project-container {
   width: 1170px;
   display: flex;
   align-items: center;
@@ -642,7 +640,7 @@ img {
   gap: var(--section-gap);
 }
 
-.flex-elements {
+.project-elements {
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--portfolio-bg-color);
 }
@@ -665,15 +663,15 @@ img {
   line-height: calc(30 / 16);
 }
 
-.flex-container .link {
+.project-container .link {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 
-  transition: box-shadow 250ms var(--timing-function)-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
-.flex-container .link:hover,
-.flex-container .link:focus {
+.project-container .link:hover,
+.project-container .link:focus {
   box-shadow: var(--box-shadow);
 }
