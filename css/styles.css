@@ -36,6 +36,7 @@ body {
   font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  /* padding-top: 80px; */
 }
 
 h1,
@@ -94,7 +95,13 @@ img {
 
 /* Header customisation */
 
-.header {
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--header-bg-color);
 }
 
