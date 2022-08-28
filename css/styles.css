@@ -150,25 +150,24 @@ img {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
   color: var(--accent-color);
 }
 
-/* .site-nav .link.current {
-  transition: scaleX 250ms var(--timing-function);
-} */
-
 .site-nav .link.current::after {
+  display: inline-block;
   content: '';
 
   position: absolute;
   left: 0;
   bottom: 0;
 
-  display: flex;
   width: 100%;
   height: 4px;
   border-radius: 2px;
+
   background-color: var(--accent-color);
 }
 
@@ -189,48 +188,36 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: inherit;
   fill: currentColor;
 
   transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.icon-mail {
-  width: 16px;
-  height: 12px;
+.icon-contacts {
   margin-right: 10px;
-
-  fill: currentColor;
-}
-
-.icon-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-
   fill: currentColor;
 }
 
 /* main customisation */
-/* hero */
 
-.hero {
-  background-image: linear-gradient(to right, var(--overlay), var(--overlay)),
-    url(../images/main/hero.jpg);
+/* hero section */
+
+.section-hero {
+  text-align: center;
+  padding: 200px 0;
+
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  text-align: center;
+  background-image: linear-gradient(to right, var(--overlay), var(--overlay)),
+    url(../images/main/hero.jpg);
   background-color: var(--footer-bg-color);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .button {
@@ -259,22 +246,18 @@ img {
 }
 
 .hero-title {
+  color: var(--primary-white-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-}
-
-.hero-container {
+  text-transform: uppercase;
   width: 696px;
-  margin: 0 auto;
-  max-height: 200px;
-}
 
-.hero-container h1 {
-  margin-bottom: var(--section-gap);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 /* sections */

@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -25,6 +23,7 @@
           <a class="logo-header link" href="./index.html">
             <span class="accent">Web</span>Studio
           </a>
+
           <ul class="site-nav list">
             <li class="item">
               <a class="link current" href="index.html">Студія</a>
@@ -33,14 +32,15 @@
               <a class="link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="item">
-              <a data-open-modal class="link" href="">Контакти</a>
+              <a class="link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
+
         <ul class="contacts-nav list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com"
-              ><svg class="icon-mail">
+              ><svg class="icon-contacts" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -48,7 +48,7 @@
           </li>
           <li class="item">
             <a class="link" href="tel:+380961111111"
-              ><svg class="icon-tel">
+              ><svg class="icon-contacts" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,10 +60,10 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero-container">
+      <section class="section-hero">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Features Our Projects and Team -->
