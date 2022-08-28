@@ -663,7 +663,7 @@ address .list {
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: var(--overlay-background);
 
   transform: translateY(101%);
