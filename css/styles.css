@@ -414,14 +414,14 @@ img {
   color: var(--primary-white-color);
 }
 
-/* Company partner section */
+/* Partner section */
 
-.company-partner-list {
+.partner-list {
   display: flex;
   justify-content: space-between;
 }
 
-.company-partner-link {
+.partner-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -435,8 +435,8 @@ img {
   transition: color 250ms var(--transition), border-color 250ms var(--transition);
 }
 
-.company-partner-link:hover,
-.company-partner-link:focus {
+.partner-link:hover,
+.partner-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
