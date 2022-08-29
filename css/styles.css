@@ -288,7 +288,7 @@ img {
   background: var(--secondary-background);
 }
 
-/* feature-list section, doing-list section and employee section*/
+/* feature-list section, doing-list section and team section*/
 
 .feature-list-title {
   font-weight: 700;
@@ -311,7 +311,7 @@ img {
 /* Our doing section */
 
 .section-doing {
-  padding-top: 0; /*This section doesn't have padding-top*/
+  padding-top: 0;
 }
 
 .doing-list {
@@ -342,30 +342,30 @@ img {
   color: var(--primary-white-color);
 }
 
-/* Employees section */
+/* Team section */
 
 .section.gray {
   background-color: var(--secondary-background);
 }
 
-.employee-list {
+.team-list {
   display: flex;
   gap: 30px;
 }
 
-.employee-card {
+.team-card {
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.employee-text-container {
+.team-text-container {
   text-align: center;
   padding: 30px 0;
 }
 
-.employee-title {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(18.75 / 16);
@@ -374,7 +374,7 @@ img {
   margin-bottom: 10px;
 }
 
-.employee-text {
+.team-text {
   margin-bottom: 16px;
   color: var(--secondary-text-color);
 
@@ -389,7 +389,7 @@ img {
   justify-content: center;
 }
 
-/* employee-social-link and company-social-link-footer */
+/* team-social-link and company-social-link-footer */
 .social-link {
   display: flex;
   justify-content: center;
@@ -406,7 +406,7 @@ img {
   fill: currentColor;
 }
 
-/* employee social-link hover and company-social-link hover */
+/* team social-link hover and company-social-link hover */
 
 .social-link:hover,
 .social-link:focus {
@@ -537,7 +537,7 @@ address .list {
 }
 
 .is-hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
   opacity: 0;
   pointer-events: none;
 }
