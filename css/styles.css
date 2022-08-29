@@ -534,11 +534,11 @@ address .list {
 
   background-color: var(--backdrop-color);
 
-  transition: opacity 500ms var(--transition), visibility 1000ms var(--transition);
+  transition: opacity 500ms var(--transition), visibility 500ms var(--transition);
 }
 
 .is-hidden {
-  /* visibility: hidden; */
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -587,14 +587,14 @@ address .list {
 
 /* Styles for portfolio.html */
 
-.category-list {
+.sort-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
 }
 
-.category-list-button {
+.sort-list-button {
   padding: 6px 22px;
 
   background-color: var(--secondary-background);
@@ -614,8 +614,8 @@ address .list {
     box-shadow 250ms var(--transition);
 }
 
-.category-list-button:hover,
-.category-list-button:focus {
+.sort-list-button:hover,
+.sort-list-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
