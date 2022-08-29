@@ -22,7 +22,8 @@
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --overlay-background: rgba(33, 150, 243, 0.9);
 
-  --section-padding: 94px;
+  --section-indent: 94px;
+  --indent: 30px;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -206,7 +207,7 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: var(--indent);
 }
 
 .button {
@@ -240,7 +241,7 @@ img {
 /* Other sections*/
 
 .section {
-  padding: var(--section-padding) 0;
+  padding: var(--section-indent) 0;
 }
 
 .section-title {
@@ -271,7 +272,7 @@ img {
 
 .feature-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .feature-list-item {
@@ -282,7 +283,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: var(--indent);
   height: 120px;
 
   background: var(--secondary-background);
@@ -316,7 +317,7 @@ img {
 
 .doing-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .doing-list-item {
@@ -350,7 +351,7 @@ img {
 
 .team-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .team-card {
@@ -362,7 +363,7 @@ img {
 
 .team-text-container {
   text-align: center;
-  padding: 30px 0;
+  padding: var(--indent) 0;
 }
 
 .team-title {
@@ -573,8 +574,8 @@ address .list {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: var(--indent);
+  height: var(--indent);
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -626,7 +627,7 @@ address .list {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 .portfolio-link {
