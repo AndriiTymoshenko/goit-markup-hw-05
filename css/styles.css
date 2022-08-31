@@ -15,9 +15,9 @@
   --button-secondary-color: #188ce8;
   --box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --footer-link-background-color: rgba(255, 255, 255, 0.1);
 
   --icon-color: #afb1b8;
-  --footer-link-background-color: rgba(255, 255, 255, 0.1);
 
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --overlay-background: rgba(33, 150, 243, 0.9);
@@ -227,7 +227,6 @@ img {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   text-align: center;
-
   cursor: pointer;
 
   transition: background-color 250ms var(--transition);
